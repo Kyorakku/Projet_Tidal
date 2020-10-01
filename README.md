@@ -1,3 +1,3 @@
 # Projet_Tidal
-PHP Project Tidal
-HELLO
+## Antonin POULARD - Clément PEROT
+
