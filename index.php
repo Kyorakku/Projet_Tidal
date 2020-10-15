@@ -21,12 +21,11 @@ try {
 //echo("Ça marche !!!");
 ?>
 <?php
-// require_once(SMARTY_DIR);
 require_once('libs/smarty/Smarty.class.php');
-define('template_dir', 'libs/smarty/templates');
-define('compile_dir', 'libs/smarty/templates_c');
-define('config_dir', 'libs/smarty/configs');
-define('cache_dir', 'libs/smarty/cache');
+define('template_dir', 'libs/smarty/templates/');
+define('compile_dir', 'libs/smarty/templates_c/');
+define('config_dir', 'libs/smarty/configs/');
+define('cache_dir', 'libs/smarty/cache/');
 $smarty = new Smarty();
 $smarty->assign('name','Ned');
 ?>
@@ -37,7 +36,7 @@ $smarty->assign('name','Ned');
 </header>
 <body>
 
-<?php $smarty->display('/libs/smarty/index.tpl'); ?>
+<?php $smarty->display('libs\smarty\templates\index.tpl'); ?>
 Bah faut mettre les articles ici quoi
 
 </body>
