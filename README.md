@@ -8,7 +8,7 @@
 
 ### 15/10/2020
 
-* Mise en place de Wamps pour le travail à la maison (Fait)\textcolor{red}{red}
+* Mise en place de Wamps pour le travail à la maison (Fait)
 * Page web statique HTML
 * Comment utiliser SMARTY ?
   1. On va récupérer les valeurs de la base de données à partir d'une seul information. Il va ensuite "placer" les différentes informations dans les emplacements associés à l'intérieur du template SMARTY.
