@@ -4,15 +4,18 @@ session_start();
 require('./libs/smarty/Smarty.class.php');
 
 try {
-    $bdd = new PDO("mysql:host=localhost;dbname=webapp", "root",  "");
-    $bdd->query("SET NAMES UTF8");
-    foreach($bdd->query('SELECT * from Products') as $row) {
-        print_r($row);
+    $bdd = new PDO('mysql:host=localhost;dbname=webapp', 'root',  '');
+    $bdd->query('SET NAMES UTF8');
+    $rep = $bdd->query('SELECT name from Products');
+    while ($donnees = $rep->fetch()) {
+        echo $donnees['name'] . '<br />';
     }
+    $rep->closeCursor();
+
     $bdd = null;
 } catch (Exception $e) {
-    //echo "Problème de connexion à la base de donnée !";
-    //echo($e);
+    echo 'Problème de connexion à la base de donnée !';
+    die();
 }
 
 //echo("Ça marche !!!");
