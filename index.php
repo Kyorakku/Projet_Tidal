@@ -11,11 +11,11 @@ try {
     }
     $bdd = null;
 } catch (Exception $e) {
-    //echo "Problème de connexion à la base de donnée !";
-    //echo($e);
+    echo "Problème de connexion à la base de donnée !";
+    echo($e);
 }
 
-//echo("Ça marche !!!");
+echo("Ça marche !!!");
 ?>
 <?php
 require_once('libs/smarty/Smarty.class.php');
@@ -30,11 +30,16 @@ $smarty->assign('name','Ned');
 <html>
 <header>
 <link href="/css/reset-min.css" rel="stylesheet" type="text/css" />
+<?php $smarty->display('libs\smarty\templates\indexHeader.tpl'); ?>
 </header>
+
 <body>
 
-<?php $smarty->display('libs\smarty\templates\index.tpl'); ?>
+<?php $smarty->display('libs\smarty\templates\indexBody.tpl'); ?>
 Bah faut mettre les articles ici quoi
 
 </body>
+<footer>
+
+</footer>
 </html>
