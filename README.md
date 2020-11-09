@@ -10,6 +10,7 @@
 
 * Mise en place de Wamps pour le travail à la maison (Fait)
 * Page web statique HTML
-* Comment utiliser SMARTY ?
+* Connexion à la BDD avec PDO fonctionne (ne marche pas chez Antonin -> ne connait pas la BDD ?)
+* Comment utiliser SMARTY ? (Test appel de template Fait)
   1. On va récupérer les valeurs de la base de données à partir d'une seul information. Il va ensuite "placer" les différentes informations dans les emplacements associés à l'intérieur du template SMARTY.
   2. Pour faire au plus simple on prendra un header, un body, un footer et une une navbar pour chaque fenêtre. A voir par la suite si l'on en rajoute.
