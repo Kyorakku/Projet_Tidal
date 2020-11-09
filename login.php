@@ -32,15 +32,15 @@
     <link href="./styles/css/login.css" rel="stylesheet">
   </head>
   <body class="text-center">
-    <form action="./controllers/connect.php" method="POST" class="form-signin border rounded">
+    <form action="./controllers/connect.php" method="post" class="form-signin border rounded">
 
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
 
       <label for="Username" class="sr-only">Username</label>
-      <input type="text" id="inputUsername" class="form-control" placeholder="Username" required>
+      <input type="text" name="inputUsername" class="form-control" placeholder="Username" required>
       
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <input type="password" name="inputPassword" class="form-control" placeholder="Password" required>
       
       <div class="checkbox mb-3">
         <label>
@@ -48,14 +48,8 @@
         </label>
       </div>
       
-      <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit" value="LOGIN">Sign in</button>
-      <?php
-                if(isset($_GET['erreur'])){
-                    $err = $_GET['erreur'];
-                    if($err==1 || $err==2)
-                        echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
-                }
-                ?>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit" value="OK">Sign in</button>
+
     </form>
 
 </body>
